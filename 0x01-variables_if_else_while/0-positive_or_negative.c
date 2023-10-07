@@ -2,6 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 
+/**
+ * main determines if a number is positive or negative or zero.
+ */
+
+
 int main(void)
 {
 	int n;
