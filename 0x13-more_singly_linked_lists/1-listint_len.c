@@ -1,16 +1,20 @@
 #include "lists.h"
-
 /**
- * listint_len - Return the number of elements
- * @h: data type pointer of struct
- * Return: elements of the str i
+ * listint_len - This function return to the number of nudes
+ * @h: This is my structure entry
+ * Return: This return to the number the nodes
+ *
  */
 size_t listint_len(const listint_t *h)
 {
-	unsigned int i = 0;
-	const listint_t	 *new_node = h;
+	unsigned int count = 0;
 
-	for (; new_node; new_node = new_node->next)
-		i++;
-		return (i);
+	if (h == NULL)
+		return (0);
+	while (h != NULL)
+	{
+		count += 1;
+		h = h->next;
+	}
+	return (count);
 }
